@@ -13,14 +13,9 @@ public class DragPiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     private RectTransform rectTrans;
     public Canvas myCanvas;
     public CanvasGroup canvasGroup;
-    public GameObject realLetterUpLeftZoomed, realLetterUpRightZoomed, realLetterMiddleLeftZoomed, realLetterMiddleRightZoomed,
-    realLetterDownLeftZoomed, realLetterDownRightZoomed;
-    public GameObject fake1LetterUpLeftZoomed, fake1LetterUpRightZoomed, fake1LetterMiddleLeftZoomed, fake1LetterMiddleRightZoomed,
-    fake1LetterDownLeftZoomed, fake1LetterDownRightZoomed;
     public int id;
-    public GameObject fake2LetterUpLeftZoomed, fake2LetterUpRightZoomed, fake2LetterMiddleLeftZoomed, fake2LetterMiddleRightZoomed,
-    fake2LetterDownLeftZoomed, fake2LetterDownRightZoomed;
 
+    public GameObject letterType;
     void Start()
     {
         rectTrans = GetComponent<RectTransform>();
@@ -37,10 +32,6 @@ public class DragPiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     public void OnPointerDown(PointerEventData click)
     {
         Debug.Log("Click");
-        if(Input.GetKeyDown(KeyCode.LeftAlt))
-        {
-            
-        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)

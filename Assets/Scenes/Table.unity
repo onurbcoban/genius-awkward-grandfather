@@ -326,25 +326,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragPiece
   myCanvas: {fileID: 1556260949}
   canvasGroup: {fileID: 329459283}
-  realLetterUpLeftZoomed: {fileID: 0}
-  realLetterUpRightZoomed: {fileID: 0}
-  realLetterMiddleLeftZoomed: {fileID: 0}
-  realLetterMiddleRightZoomed: {fileID: 0}
-  realLetterDownLeftZoomed: {fileID: 0}
-  realLetterDownRightZoomed: {fileID: 0}
-  fake1LetterUpLeftZoomed: {fileID: 0}
-  fake1LetterUpRightZoomed: {fileID: 0}
-  fake1LetterMiddleLeftZoomed: {fileID: 0}
-  fake1LetterMiddleRightZoomed: {fileID: 0}
-  fake1LetterDownLeftZoomed: {fileID: 0}
-  fake1LetterDownRightZoomed: {fileID: 0}
   id: 3
-  fake2LetterUpLeftZoomed: {fileID: 0}
-  fake2LetterUpRightZoomed: {fileID: 0}
-  fake2LetterMiddleLeftZoomed: {fileID: 0}
-  fake2LetterMiddleRightZoomed: {fileID: 0}
-  fake2LetterDownLeftZoomed: {fileID: 0}
-  fake2LetterDownRightZoomed: {fileID: 0}
+  letterType: {fileID: 0}
 --- !u!114 &329459285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,25 +652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragPiece
   myCanvas: {fileID: 1556260949}
   canvasGroup: {fileID: 706108634}
-  realLetterUpLeftZoomed: {fileID: 0}
-  realLetterUpRightZoomed: {fileID: 0}
-  realLetterMiddleLeftZoomed: {fileID: 0}
-  realLetterMiddleRightZoomed: {fileID: 0}
-  realLetterDownLeftZoomed: {fileID: 0}
-  realLetterDownRightZoomed: {fileID: 0}
-  fake1LetterUpLeftZoomed: {fileID: 0}
-  fake1LetterUpRightZoomed: {fileID: 0}
-  fake1LetterMiddleLeftZoomed: {fileID: 0}
-  fake1LetterMiddleRightZoomed: {fileID: 0}
-  fake1LetterDownLeftZoomed: {fileID: 0}
-  fake1LetterDownRightZoomed: {fileID: 0}
   id: 4
-  fake2LetterUpLeftZoomed: {fileID: 0}
-  fake2LetterUpRightZoomed: {fileID: 0}
-  fake2LetterMiddleLeftZoomed: {fileID: 0}
-  fake2LetterMiddleRightZoomed: {fileID: 0}
-  fake2LetterDownLeftZoomed: {fileID: 0}
-  fake2LetterDownRightZoomed: {fileID: 0}
+  letterType: {fileID: 0}
 --- !u!114 &706108636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,25 +727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragPiece
   myCanvas: {fileID: 0}
   canvasGroup: {fileID: 0}
-  realLetterUpLeftZoomed: {fileID: 0}
-  realLetterUpRightZoomed: {fileID: 0}
-  realLetterMiddleLeftZoomed: {fileID: 0}
-  realLetterMiddleRightZoomed: {fileID: 0}
-  realLetterDownLeftZoomed: {fileID: 0}
-  realLetterDownRightZoomed: {fileID: 0}
-  fake1LetterUpLeftZoomed: {fileID: 0}
-  fake1LetterUpRightZoomed: {fileID: 0}
-  fake1LetterMiddleLeftZoomed: {fileID: 0}
-  fake1LetterMiddleRightZoomed: {fileID: 0}
-  fake1LetterDownLeftZoomed: {fileID: 0}
-  fake1LetterDownRightZoomed: {fileID: 0}
   id: 0
-  fake2LetterUpLeftZoomed: {fileID: 0}
-  fake2LetterUpRightZoomed: {fileID: 0}
-  fake2LetterMiddleLeftZoomed: {fileID: 0}
-  fake2LetterMiddleRightZoomed: {fileID: 0}
-  fake2LetterDownLeftZoomed: {fileID: 0}
-  fake2LetterDownRightZoomed: {fileID: 0}
+  letterType: {fileID: 0}
 --- !u!60 &879122522
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1012,25 +961,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragPiece
   myCanvas: {fileID: 1556260949}
   canvasGroup: {fileID: 926602691}
-  realLetterUpLeftZoomed: {fileID: 0}
-  realLetterUpRightZoomed: {fileID: 0}
-  realLetterMiddleLeftZoomed: {fileID: 0}
-  realLetterMiddleRightZoomed: {fileID: 0}
-  realLetterDownLeftZoomed: {fileID: 0}
-  realLetterDownRightZoomed: {fileID: 0}
-  fake1LetterUpLeftZoomed: {fileID: 0}
-  fake1LetterUpRightZoomed: {fileID: 0}
-  fake1LetterMiddleLeftZoomed: {fileID: 0}
-  fake1LetterMiddleRightZoomed: {fileID: 0}
-  fake1LetterDownLeftZoomed: {fileID: 0}
-  fake1LetterDownRightZoomed: {fileID: 0}
   id: 6
-  fake2LetterUpLeftZoomed: {fileID: 0}
-  fake2LetterUpRightZoomed: {fileID: 0}
-  fake2LetterMiddleLeftZoomed: {fileID: 0}
-  fake2LetterMiddleRightZoomed: {fileID: 0}
-  fake2LetterDownLeftZoomed: {fileID: 0}
-  fake2LetterDownRightZoomed: {fileID: 0}
+  letterType: {fileID: 0}
 --- !u!114 &926602693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,25 +1341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragPiece
   myCanvas: {fileID: 1556260949}
   canvasGroup: {fileID: 1311510422}
-  realLetterUpLeftZoomed: {fileID: 1311510416}
-  realLetterUpRightZoomed: {fileID: 1926659385}
-  realLetterMiddleLeftZoomed: {fileID: 0}
-  realLetterMiddleRightZoomed: {fileID: 0}
-  realLetterDownLeftZoomed: {fileID: 0}
-  realLetterDownRightZoomed: {fileID: 0}
-  fake1LetterUpLeftZoomed: {fileID: 0}
-  fake1LetterUpRightZoomed: {fileID: 0}
-  fake1LetterMiddleLeftZoomed: {fileID: 0}
-  fake1LetterMiddleRightZoomed: {fileID: 0}
-  fake1LetterDownLeftZoomed: {fileID: 0}
-  fake1LetterDownRightZoomed: {fileID: 0}
   id: 1
-  fake2LetterUpLeftZoomed: {fileID: 0}
-  fake2LetterUpRightZoomed: {fileID: 0}
-  fake2LetterMiddleLeftZoomed: {fileID: 0}
-  fake2LetterMiddleRightZoomed: {fileID: 0}
-  fake2LetterDownLeftZoomed: {fileID: 0}
-  fake2LetterDownRightZoomed: {fileID: 0}
+  letterType: {fileID: 0}
 --- !u!114 &1311510424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,25 +1895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragPiece
   myCanvas: {fileID: 1556260949}
   canvasGroup: {fileID: 1926659387}
-  realLetterUpLeftZoomed: {fileID: 0}
-  realLetterUpRightZoomed: {fileID: 0}
-  realLetterMiddleLeftZoomed: {fileID: 0}
-  realLetterMiddleRightZoomed: {fileID: 0}
-  realLetterDownLeftZoomed: {fileID: 0}
-  realLetterDownRightZoomed: {fileID: 0}
-  fake1LetterUpLeftZoomed: {fileID: 0}
-  fake1LetterUpRightZoomed: {fileID: 0}
-  fake1LetterMiddleLeftZoomed: {fileID: 0}
-  fake1LetterMiddleRightZoomed: {fileID: 0}
-  fake1LetterDownLeftZoomed: {fileID: 0}
-  fake1LetterDownRightZoomed: {fileID: 0}
   id: 2
-  fake2LetterUpLeftZoomed: {fileID: 0}
-  fake2LetterUpRightZoomed: {fileID: 0}
-  fake2LetterMiddleLeftZoomed: {fileID: 0}
-  fake2LetterMiddleRightZoomed: {fileID: 0}
-  fake2LetterDownLeftZoomed: {fileID: 0}
-  fake2LetterDownRightZoomed: {fileID: 0}
+  letterType: {fileID: 0}
 --- !u!114 &1926659389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,25 +2000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragPiece
   myCanvas: {fileID: 1556260949}
   canvasGroup: {fileID: 1930936648}
-  realLetterUpLeftZoomed: {fileID: 0}
-  realLetterUpRightZoomed: {fileID: 0}
-  realLetterMiddleLeftZoomed: {fileID: 0}
-  realLetterMiddleRightZoomed: {fileID: 0}
-  realLetterDownLeftZoomed: {fileID: 0}
-  realLetterDownRightZoomed: {fileID: 0}
-  fake1LetterUpLeftZoomed: {fileID: 0}
-  fake1LetterUpRightZoomed: {fileID: 0}
-  fake1LetterMiddleLeftZoomed: {fileID: 0}
-  fake1LetterMiddleRightZoomed: {fileID: 0}
-  fake1LetterDownLeftZoomed: {fileID: 0}
-  fake1LetterDownRightZoomed: {fileID: 0}
   id: 5
-  fake2LetterUpLeftZoomed: {fileID: 0}
-  fake2LetterUpRightZoomed: {fileID: 0}
-  fake2LetterMiddleLeftZoomed: {fileID: 0}
-  fake2LetterMiddleRightZoomed: {fileID: 0}
-  fake2LetterDownLeftZoomed: {fileID: 0}
-  fake2LetterDownRightZoomed: {fileID: 0}
+  letterType: {fileID: 0}
 --- !u!114 &1930936650
 MonoBehaviour:
   m_ObjectHideFlags: 0
