@@ -18,7 +18,7 @@ public class Drop : MonoBehaviour, IDropHandler
             }
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition =
                 this.GetComponent<RectTransform>().anchoredPosition;
-        }        
+        }       eventData.pointerDrag.GetComponent<RectTransform>().localScale *=2;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
