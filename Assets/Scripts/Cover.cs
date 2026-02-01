@@ -7,7 +7,7 @@ public class Cover : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("OnPointerClick");
-        LevelLoader.Instance.LoadLevel("Letter");
+        LevelLoader.Instance.LoadLevel("Letter" , 2, 2);
         coverOpen.Play();
     }
 }

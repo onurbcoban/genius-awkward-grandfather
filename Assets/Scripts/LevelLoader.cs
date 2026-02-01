@@ -6,10 +6,12 @@ public class LevelLoader : MonoBehaviour
 {
     public static LevelLoader Instance;
 
-    [Header("Varsayılan Ayarlar")]
+    [Header("Ayarlar")]
     public CanvasGroup blackScreenCanvasGroup;
-    public float defaultTransitionTime = 1f; // Varsayılan geçiş hızı
-    public float defaultWaitTime = 1f;       // Varsayılan bekleme süresi
+    
+    // Varsayılan değerler
+    public float defaultTransitionTime = 1f;
+    public float defaultWaitTime = 1f;
 
     private void Awake()
     {
@@ -24,9 +26,9 @@ public class LevelLoader : MonoBehaviour
         }
     }
 
-    // GÜNCELLENEN KISIM: Opsiyonel Parametreler
-    // Eğer sadece sahne adı girilirse, süreler -1 olur ve varsayılan kullanılır.
-    // Eğer sahne adı + süre girilirse, o süreler kullanılır.
+    // --- ÖNEMLİ KISIM ---
+    // Bu fonksiyonun parantez içi (parametreleri) Ending scriptinle uyumlu olmalı.
+    // Artık 3 veri kabul ediyor: İsim, Geçiş Süresi, Bekleme Süresi.
     public void LoadLevel(string sceneName, float customTransitionTime = -1f, float customWaitTime = -1f)
     {
         StartCoroutine(TransitionCo(sceneName, customTransitionTime, customWaitTime));
@@ -34,15 +36,13 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator TransitionCo(string sceneName, float timeOverride, float waitOverride)
     {
-        // Hangi süreyi kullanacağına karar ver
-        // Eğer -1 geldiyse (yani boş bırakıldıysa) varsayılanı (default) kullan, yoksa gönderileni kullan.
+        // Eğer -1 gönderildiyse (boş bırakıldıysa) varsayılanı kullan, yoksa özel süreyi kullan
         float duration = (timeOverride < 0) ? defaultTransitionTime : timeOverride;
         float wait = (waitOverride < 0) ? defaultWaitTime : waitOverride;
 
-        // 1. AŞAMA: KARARMA
+        // 1. Kararma
         blackScreenCanvasGroup.blocksRaycasts = true;
         float t = 0f;
-
         while (t < 1f)
         {
             t += Time.deltaTime / duration;
@@ -50,14 +50,14 @@ public class LevelLoader : MonoBehaviour
             yield return null;
         }
 
-        // 2. AŞAMA: BEKLEME (Senin belirlediğin özel süre kadar)
+        // 2. Bekleme
         yield return new WaitForSeconds(wait);
 
-        // 3. AŞAMA: YÜKLEME
+        // 3. Yükleme
         SceneManager.LoadScene(sceneName);
         yield return null;
 
-        // 4. AŞAMA: AÇILMA
+        // 4. Açılma
         t = 0f;
         while (t < 1f)
         {

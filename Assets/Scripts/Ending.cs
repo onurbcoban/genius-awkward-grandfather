@@ -8,6 +8,7 @@ public class Ending : MonoBehaviour
     public GameObject maskingTaped, template, fakes, lastTalks;
     public GameObject blockerPanel;
     private bool isGameEnded = false;
+    public AudioSource maskingTape;
 
     private float distanceLimit = 2f; 
 
@@ -66,7 +67,8 @@ public class Ending : MonoBehaviour
         // İstersen özel süreler de verebilirsin: LoadLevel(nextSceneName, 1f, 0.5f);
         if (LevelLoader.Instance != null)
         {
-            LevelLoader.Instance.LoadLevel("Ending", 1, 0);
+            LevelLoader.Instance.LoadLevel("Ending", 1, 4);
+             maskingTape.Play();
         }
         else
         {
