@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 
 public class HoverItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
@@ -15,6 +16,7 @@ public class HoverItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
         if(PreviewManager.Instance != null)
         {
             PreviewManager.Instance.SetCurrentHover(myImage.sprite);
+
         }
     }
 

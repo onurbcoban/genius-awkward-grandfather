@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 public class PreviewManager : MonoBehaviour
@@ -6,7 +8,9 @@ public class PreviewManager : MonoBehaviour
 
     public CanvasGroup previewCanvasGroup;
     public Image PreviewImage;
+    public TextMeshProUGUI PreviewText;
     private Sprite currentHoveredSprite;
+    private String currentHoveredText;
     private void Awake()
     {
         if(Instance == null) Instance = this;
@@ -37,6 +41,7 @@ public class PreviewManager : MonoBehaviour
     {
         currentHoveredSprite = sprite;
         PreviewImage.sprite = sprite;
+        
     }
     public void ClearCurrentHover()
     {

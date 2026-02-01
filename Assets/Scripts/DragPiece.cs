@@ -13,9 +13,6 @@ public class DragPiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     private RectTransform rectTrans;
     public Canvas myCanvas;
     public CanvasGroup canvasGroup;
-    public int id;
-
-    public GameObject letterType;
     void Start()
     {
         rectTrans = GetComponent<RectTransform>();
@@ -38,6 +35,7 @@ public class DragPiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     {
         Debug.Log("OnBeginDrag");
         canvasGroup.blocksRaycasts = false;
+        transform.localScale = Vector3.one;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -50,6 +48,7 @@ public class DragPiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     {
         Debug.Log("OnEndDrag");
         canvasGroup.blocksRaycasts = true;
+
     }
     /*void OnMouseDown() {
 offset = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
