@@ -3,13 +3,6 @@ using UnityEngine.EventSystems;
 public class DragPiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
-    
-    /*Camera cam;
-    Vector3 offset, targetPosition;
-    private bool isMouseDragged = false;
-    private bool isInsideTarget = false;
-    //public GameObject leftDownTemplate, paperLeftDownFake1;*/
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private RectTransform rectTrans;
     public Canvas myCanvas;
     public CanvasGroup canvasGroup;
@@ -50,52 +43,5 @@ public class DragPiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
         canvasGroup.blocksRaycasts = true;
 
     }
-    /*void OnMouseDown() {
-offset = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
-Debug.Log("OnMouseDown");
-}
 
-void OnMouseDrag() 
-{
-Vector3 newPosition = cam.ScreenToWorldPoint(Input.mousePosition) + offset;
-transform.position = new Vector3(newPosition.x, newPosition.y, transform.position.z);
-isMouseDragged = true;
-
-//Debug.Log("OnMouseDrag");
-
-}
-void OnMouseUpAsButton()
-{
-isMouseDragged = false;
-if(isInsideTarget && !isMouseDragged)
-{
-transform.position = targetPosition;
-}
-isInsideTarget = false;
-}
-
-void OnMouseOver()
-{
-}*/
-
-    /*void OnCollisionEnter2D(Collision2D other)
-
-    {
-        if(other.gameObject.CompareTag("LeftDownTemplate"))
-        {
-            isInsideTarget = true;
-            targetPosition = leftDownTemplate.transform.position; 
-            Debug.Log("OnCollisions");
-
-        }
-        //else if(gameObject.CompareTag("LeftDownFake1") && !other.CompareTag("LeftDownTemplate"))
-        //{
-        //    isInsideTarget = false;
-        //}
-    }*/
-
-
-
-    //Tutmayı bıraktığında o alanın içindeyse o alana ortalanmış şekilde oturacak
-    // 
 } 

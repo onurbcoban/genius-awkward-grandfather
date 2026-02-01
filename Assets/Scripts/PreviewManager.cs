@@ -8,9 +8,7 @@ public class PreviewManager : MonoBehaviour
 
     public CanvasGroup previewCanvasGroup;
     public Image PreviewImage;
-    public TextMeshProUGUI PreviewText;
     private Sprite currentHoveredSprite;
-    private String currentHoveredText;
     private void Awake()
     {
         if(Instance == null) Instance = this;

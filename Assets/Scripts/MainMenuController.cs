@@ -6,22 +6,11 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Cover");
+        LevelLoader.Instance.LoadLevel("Cover", 1 , 0);
     }
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("quit");
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
